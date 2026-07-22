@@ -15,15 +15,14 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       className="min-h-screen pt-24"
       style={{
         background: '#0A0A0B',
-        backgroundImage: 'url(/images/image.png)',
+        backgroundImage: 'url(/images/image copy.png)',
         backgroundAttachment: 'fixed',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundBlendMode: 'luminosity',
       }}
     >
       {/* Dark overlay */}
-      <div className="fixed inset-0 pointer-events-none z-0" style={{ background: 'rgba(10,10,11,0.91)' }} />
+      <div className="fixed inset-0 pointer-events-none z-0" style={{ background: 'rgba(8,8,10,0.84)' }} />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-10 py-12">
         {/* Back link */}

@@ -48,6 +48,13 @@ const services = [
   },
 ];
 
+const BG_STYLE = {
+  backgroundImage: 'url(/images/image copy.png)',
+  backgroundAttachment: 'fixed',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+};
+
 const cardVariants = {
   hidden: { opacity: 0, y: 32 },
   visible: (i: number) => ({
@@ -67,27 +74,16 @@ export default function HomePage() {
       <section
         id="services"
         className="relative py-24 lg:py-36 px-6 lg:px-10"
-        style={{
-          background: '#0A0A0B',
-          backgroundImage: 'url(/images/image.png)',
-          backgroundAttachment: 'fixed',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundBlendMode: 'luminosity',
-        }}
+        style={BG_STYLE}
       >
-        {/* Dark overlay */}
-        <div className="absolute inset-0 pointer-events-none" style={{ background: 'rgba(10,10,11,0.91)' }} />
-        {/* Radial glow */}
+        {/* Smoked overlay — lets ~14% of bg show */}
+        <div className="absolute inset-0 pointer-events-none" style={{ background: 'rgba(8,8,10,0.84)' }} />
         <div
           className="absolute inset-0 pointer-events-none"
-          style={{
-            background: 'radial-gradient(ellipse 70% 40% at 50% 0%, rgba(255,107,26,0.06) 0%, transparent 60%)',
-          }}
+          style={{ background: 'radial-gradient(ellipse 70% 40% at 50% 0%, rgba(255,107,26,0.05) 0%, transparent 60%)' }}
         />
 
         <div className="relative max-w-7xl mx-auto">
-          {/* Heading */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -118,7 +114,6 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-          {/* Cards grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.map((svc, i) => {
               const Icon = svc.icon;
@@ -179,16 +174,10 @@ export default function HomePage() {
       <section
         id="about"
         className="relative py-24 lg:py-36 px-6 lg:px-10"
-        style={{
-          background: '#0A0A0B',
-          backgroundImage: 'url(/images/image.png)',
-          backgroundAttachment: 'fixed',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundBlendMode: 'luminosity',
-        }}
+        style={BG_STYLE}
       >
-        <div className="absolute inset-0 pointer-events-none" style={{ background: 'rgba(10,10,11,0.93)' }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ background: 'rgba(8,8,10,0.86)' }} />
+
         <div className="relative max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -260,21 +249,12 @@ export default function HomePage() {
       <section
         id="contact"
         className="relative py-24 lg:py-32 px-6 lg:px-10"
-        style={{
-          background: '#0A0A0B',
-          backgroundImage: 'url(/images/image.png)',
-          backgroundAttachment: 'fixed',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundBlendMode: 'luminosity',
-        }}
+        style={BG_STYLE}
       >
-        <div className="absolute inset-0 pointer-events-none" style={{ background: 'rgba(10,10,11,0.93)' }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ background: 'rgba(8,8,10,0.86)' }} />
         <div
           className="absolute inset-0 pointer-events-none"
-          style={{
-            background: 'radial-gradient(ellipse 60% 50% at 50% 100%, rgba(255,107,26,0.07) 0%, transparent 60%)',
-          }}
+          style={{ background: 'radial-gradient(ellipse 60% 50% at 50% 100%, rgba(255,107,26,0.06) 0%, transparent 60%)' }}
         />
         <div className="relative max-w-3xl mx-auto text-center">
           <motion.div
@@ -305,10 +285,7 @@ export default function HomePage() {
               Share your requirements and our team will provide a detailed quote within 24 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="mailto:info@vectortech.in"
-                className="btn-primary"
-              >
+              <a href="mailto:info@vectortech.in" className="btn-primary">
                 Email Us
               </a>
               <a

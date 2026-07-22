@@ -20,14 +20,13 @@ export default function ProductsPage() {
       className="min-h-screen pt-24"
       style={{
         background: '#0A0A0B',
-        backgroundImage: 'url(/images/image.png)',
+        backgroundImage: 'url(/images/image copy.png)',
         backgroundAttachment: 'fixed',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundBlendMode: 'luminosity',
       }}
     >
-      <div className="fixed inset-0 pointer-events-none z-0" style={{ background: 'rgba(10,10,11,0.91)' }} />
+      <div className="fixed inset-0 pointer-events-none z-0" style={{ background: 'rgba(8,8,10,0.84)' }} />
       <div
         className="fixed inset-0 pointer-events-none z-0"
         style={{ background: 'radial-gradient(ellipse 70% 40% at 50% 0%, rgba(255,107,26,0.06) 0%, transparent 60%)' }}
