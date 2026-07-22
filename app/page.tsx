@@ -49,7 +49,7 @@ const services = [
 ];
 
 const BG_STYLE = {
-  backgroundImage: 'url(/images/image copy.png)',
+  backgroundImage: "url('/images/image copy.png')",
   backgroundAttachment: 'fixed',
   backgroundSize: 'cover',
   backgroundPosition: 'center',

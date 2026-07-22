@@ -20,7 +20,7 @@ export default function ProductsPage() {
       className="min-h-screen pt-24"
       style={{
         background: '#0A0A0B',
-        backgroundImage: 'url(/images/image copy.png)',
+        backgroundImage: "url('/images/image copy.png')",
         backgroundAttachment: 'fixed',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
